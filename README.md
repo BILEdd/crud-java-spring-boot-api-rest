@@ -1,49 +1,47 @@
-# 💬 Java Chat App — Spring Boot + WebSocket/STOMP
+# 📅 Agendador de Horários — CRUD Spring Boot + REST API
 
-> 🚧 Projeto em desenvolvimento — being built progressively as part of my portfolio.
+> 🚧 Projeto em desenvolvimento — sendo construído como parte do meu portfólio.
 
 ## 📖 Sobre o Projeto
 
-Aplicação de **chat em tempo real** desenvolvida em Java com Spring Boot, utilizando WebSocket e o protocolo STOMP para comunicação bidirecional entre cliente e servidor.
-
-Este projeto está sendo construído com o objetivo de aprofundar conhecimentos em desenvolvimento backend com Java, arquitetura de APIs e comunicação em tempo real.
+API REST para **agendamento de horários**, desenvolvida em Java com Spring Boot.
+Permite criar, listar, atualizar e deletar agendamentos, com persistência em banco de dados H2 em memória.
 
 ---
 
-## ✅ O que já foi implementado
+## ✅ Funcionalidades
 
-- [x] Estrutura do projeto configurada com Spring Boot
-- [x] Endpoints REST criados
-- [ ] Configuração do WebSocket/STOMP
-- [ ] Integração com frontend
-- [ ] Testes dos endpoints
-- [ ] Deploy
+- [x] Criar agendamento
+- [x] Listar todos os agendamentos
+- [x] Buscar agendamento por ID
+- [x] Atualizar agendamento
+- [x] Deletar agendamento
+
+---
+
+## 🔗 Endpoints
+
+| Método | Endpoint              | Descrição                        |
+|--------|-----------------------|----------------------------------|
+| POST   | `/agendamentos`       | Cria um novo agendamento         |
+| GET    | `/agendamentos`       | Lista todos os agendamentos      |
+| GET    | `/agendamentos/{id}`  | Busca agendamento por ID         |
+| PUT    | `/agendamentos/{id}`  | Atualiza um agendamento          |
+| DELETE | `/agendamentos/{id}`  | Remove um agendamento            |
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Java
+- Java 17
 - Spring Boot
-- WebSocket
-- STOMP Protocol
+- Spring Data JPA
+- Hibernate
+- Banco de Dados H2 (em memória)
 - Maven
 
 ---
 
-## 🚀 Como executar o projeto
+## 🗄️ Console H2
 
-> ⚠️ Instruções de execução serão adicionadas em breve.
-
----
-
-## 📌 Status
-
-**Em progresso** — funcionalidades sendo implementadas gradualmente.
-
----
-
-## 👤 Autor
-
-**BILEdd**  
-[GitHub](https://github.com/BILEdd)
+Após rodar o projeto, acesse o banco de dados pelo navegador:
